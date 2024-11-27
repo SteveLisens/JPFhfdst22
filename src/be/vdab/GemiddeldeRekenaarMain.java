@@ -23,7 +23,7 @@ public class GemiddeldeRekenaarMain {
             thread1.join();
             thread2.join();
         } catch (InterruptedException ex) {
-            ex.printStackTrace();
+            System.err.println(ex);
         }
 
         double avg1 = rekenaar1.getGemiddelde();
